@@ -24,7 +24,8 @@ double overlap(Rect *R1,Rect *R2){
 	double  L2 = min(R1->y,R2->y)-max(R1->y-R1->h,R2->y-R2->h);
 	if(L1 > 0&&L2>0){
 		return L2*L1; 
-	}else{ 
+	}else
+	{ 
 	return 0;
 	}
 }
